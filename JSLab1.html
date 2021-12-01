@@ -3,8 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+	<style>
+  span{
+    color:red;
+  }
+  </style>
+	
 </head>
+<h2>Demo JavaScript Innertext</h2>
 
-<body>
-</body>
+	<h3>Demo1</h3>
+	<p id="demo1">Hi  </p>
+
+	<h3>Demo2</h3>
+
+	<p id="demo2">Hi my name is </p>
+
+	<h3>Demo3</h3>
+
+	<p id="demo3">Heya! </p>
+<br><br><br><br><br>
+	<h3>MadLib - This the assignment</h3>
+
+<!-- Extend the Madlib so that it has at least 8 different words-->
+<p> Here's a madlib about a kid named <span id = "name1">John</span>  who had an imaginary friend <span id = "name2"> Julia</span>. One day the two of them went up a hill and found a pot of <span id = "noun1"> beans </span>.They loved the big pot of <span id = "noun2"> beans </span>.They decided to eat the<span id = "noun3"> beans </span> for dinner. They made some <span id = "noun4"> rice </span> to go with the beans they made. After dinner they say together and watched some <span id = "noun5"> tv</span>.They ended up watching a <span id = "noun6"> movie </span> and soon fell asleep.</p>
+
+	<script>  //The Javascript goes in this section below 
+    
+//demo 1 shows replacement of HTML text
+document.getElementById("demo1").innerHTML = "Hello World!";
+
+//demo 2 shows concatenation of HTML text
+document.getElementById("demo2").innerHTML += "dr og";
+
+//demo 3 shows a prompt which stores info as a variable
+//demo 3 shows a prompt which stores info as a variable
+
+var name = prompt("Please enter your name?");
+var noun1 = prompt("What is your favorite icecream flavor");
+var noun2 = prompt("How old are you?");
+var noun3= prompt("How many pets do you have?");
+var noun4 = prompt("Whats your favorite shoe brand?");
+var noun5= prompt("Whats your favorite color?");
+var noun6 = prompt("Whos your favorite fictional character?");
+var noun7 = prompt("Whats your favorite food?");
+
+document.getElementById("demo3").innerHTML = "Hello " + name + "! How are you today?";
+
+
+
+//Put the Madlib JS Code below here. Extend this code so that asks for 8 different inputs and prints them all out
+
+/*
+var name1 = prompt("Give me a name");
+var name2 = prompt("Give me another name");
+var noun1 = prompt("Give me an appropriate object");
+
+document.getElementById("name1").innerHTML = name1;
+document.getElementById("name2").innerHTML = name2;
+document.getElementById("noun1").innerHTML = noun1;
+*/
+
+	</script>
+
 </html>
